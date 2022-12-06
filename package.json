@@ -1,6 +1,26 @@
 {
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A place to update and store profile cards for your team members",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose _tests_/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aphinney0516/team-profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aphinney0516/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/aphinney0516/team-profile-generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.4",
+    "inquirer": "^8.2.4",
     "jest": "^29.3.1"
   }
 }
