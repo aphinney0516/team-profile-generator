@@ -27,6 +27,9 @@ const mainMenu = () => {
         if (answers.task === "intern") {
             askIntern()
         }
+        if (answers.task === "done") {
+            buildTeam()
+        }
     })
 }
 const askManager = () => {
@@ -114,12 +117,14 @@ const askIntern = () => {
         mainMenu()
     })
 }
-mainMenu();
 
-const done = () => {
+const buildTeam = () => {
     console.log('Your team has been built.');
 
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR)
     }
+    fs.writeFileSync(outputPath, generateSite(team), "utf-8")
 }
+
+mainMenu();
