@@ -126,5 +126,4 @@ const buildTeam = () => {
     }
     fs.writeFileSync(outputPath, generateSite(team), "utf-8")
 }
-
 mainMenu();
