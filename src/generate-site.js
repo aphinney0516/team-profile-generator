@@ -74,5 +74,6 @@ module.exports = team => {
     <title>Team Profiles</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
-</html>`
+</html>
+${generateTeam}`
 }
